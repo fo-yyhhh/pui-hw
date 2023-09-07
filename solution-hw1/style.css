@@ -10,12 +10,10 @@ h1{
     border: 5px solid black;
 }
 
-body{
-    margin-right:auto;
-    margin-left:auto;
-}
 
 .product{
+    margin-right:auto;
+    margin-left:auto;
     text-decoration:none;
     width: 420px;
     text-align:left;
