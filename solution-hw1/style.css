@@ -1,3 +1,7 @@
+body{
+    width:1200px
+}
+
 a{
     text-decoration:none;
 }
@@ -15,8 +19,7 @@ h1{
     text-align:center;
 }
 
-
-.product{
+.productCardDiv{
     margin-right:auto;
     margin-left:auto;
     text-decoration:none;
@@ -24,29 +27,30 @@ h1{
     display:flex;
 }
 
-body{
-    margin:0;
-    padding:0;
+.productCardDiv:hover{
+    margin-right:auto;
+    background-color:yellow;
+    font-weight:bold;
 }
 
-.productDetail{
+.productDetailPicture{
     margin-right:auto;
     margin-left:auto;
     text-align:center;
 }
 
-.pdLetter{
+.productDetailLetter{
     margin-right:auto;
     margin-left:auto;
-    text-align:center;
+    width:25%;
 }
 
 .cartProduct{
     text-align:center;
 }
 
-.product:hover{
-    margin-right:auto;
+.button{
     background-color:yellow;
-    font-weight:bold;
+    margin-left:10;
 }
+
