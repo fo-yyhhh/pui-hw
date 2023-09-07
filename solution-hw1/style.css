@@ -6,19 +6,13 @@ h1{
     text-align:center;
 }
 
-p{
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:center;
-}
-
 .image{
     border: 5px solid black;
 }
 
 
 .product{
-    text-align:center;
-
+    margin: 400px;
 }
 
 .product:hover{
