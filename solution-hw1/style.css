@@ -1,5 +1,4 @@
 a{
-    text-align:center;
     text-decoration:none;
 }
 
@@ -11,7 +10,7 @@ h1{
     border: 5px solid black;
 }
 
-div{
+body{
     margin-right:auto;
     margin-left:auto;
 }
