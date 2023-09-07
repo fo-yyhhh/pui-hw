@@ -8,22 +8,37 @@ h1{
 
 .image{
     border: 5px solid black;
+    text-align:center;
 }
 
 .link{
     text-align:center;
 }
 
+
 .product{
     margin-right:auto;
     margin-left:auto;
     text-decoration:none;
-    width: 415px;
+    width: 410px;
+    display:flex;
+}
+
+body{
+    margin:0;
+    padding:0;
 }
 
 .productDetail{
-    display:flex;
-    justify-content:center
+    margin-right:auto;
+    margin-left:auto;
+    text-align:center;
+}
+
+.pdLetter{
+    margin-right:auto;
+    margin-left:auto;
+    text-align:center;
 }
 
 .cartProduct{
@@ -31,5 +46,7 @@ h1{
 }
 
 .product:hover{
+    margin-right:auto;
     background-color:yellow;
+    font-weight:bold;
 }
