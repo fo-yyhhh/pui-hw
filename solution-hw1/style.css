@@ -14,7 +14,8 @@ h1{
 
 .product{
     text-decoration:none;
-    width: 400px;
+    display:flex; flex-direction:column; justify-content:center;
+    width: 450px;
 }
 
 .product:hover{
