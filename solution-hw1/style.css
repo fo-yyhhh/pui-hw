@@ -22,8 +22,8 @@ h1{
 }
 
 .productDetail{
-    margin-right:auto;
-    margin-left:auto;
+    display:flex;
+    justify-content:center
 }
 
 .cartProduct{
