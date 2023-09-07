@@ -1,0 +1,13 @@
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.image{
+    border: 5px solid black;
+}
+
+
+.product:hover{
+    background-color:yellow;
+}
