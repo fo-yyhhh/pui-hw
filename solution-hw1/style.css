@@ -1,5 +1,6 @@
 a{
     text-align:center;
+    text-decoration:none;
 }
 
 h1{
@@ -12,7 +13,8 @@ h1{
 
 
 .product{
-    margin: 400px;
+    text-decoration:none;
+    width: 400px;
 }
 
 .product:hover{
