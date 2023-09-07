@@ -14,9 +14,11 @@ h1{
 
 .product{
     text-decoration:none;
-    width: 450px;
+    width: 410px;
     left:50%;
-    display:flex; justify-content:flex-start
+    display:flex; 
+    justify-content:flex-start;
+    vertical-align: middle;
 }
 
 .product:hover{
