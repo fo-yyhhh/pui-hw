@@ -1,12 +1,18 @@
 
 p{
     font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
 }
 
 .image{
     border: 5px solid black;
+    
 }
 
+
+.product{
+    text-align:center;
+}
 
 .product:hover{
     background-color:yellow;
