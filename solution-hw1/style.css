@@ -11,14 +11,17 @@ h1{
     border: 5px solid black;
 }
 
+body{
+    width: 1200px;
+    text-align:center;
+}
 
 .product{
     text-decoration:none;
-    width: 410px;
-    left:50%;
-    display:flex; 
-    justify-content:flex-start;
-    vertical-align: middle;
+    width: 420px;
+    margin: 390;
+    text-align:left;
+
 }
 
 .product:hover{
