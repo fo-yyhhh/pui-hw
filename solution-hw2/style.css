@@ -1,0 +1,68 @@
+body{
+    width:1200px
+}
+
+hr{
+    height:1px;
+}
+
+a{
+    text-decoration:none;
+}
+
+h1{
+    text-align:center;
+}
+
+.image{
+    border: 5px solid black;
+    text-align:center;
+}
+
+.link{
+    text-align:center;
+}
+
+.productCardDiv{
+    margin-right:auto;
+    margin-left:auto;
+    text-decoration:none;
+    width: 410px;
+    display:flex;
+}
+
+.productCardDiv:hover{
+    margin-right:auto;
+    background-color:yellow;
+    font-weight:bold;
+}
+
+.productDetailPicture{
+    margin-right:auto;
+    margin-left:auto;
+    text-align:center;
+}
+
+.productDetailLetter{
+    margin-right:auto;
+    margin-left:auto;
+    width:25%;
+}
+
+.cartProduct{
+    text-align:center;
+}
+
+.button{
+    background-color:yellow;
+    margin-left:10px;
+}
+
+.productName{
+    font-family :Helvetica, Arial;
+    text-decoration:underline;
+}
+
+.price{
+    font-family :Helvetica, Arial;
+}
