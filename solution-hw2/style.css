@@ -4,6 +4,7 @@ body{
 
 hr{
     height:1px;
+    color:black;
 }
 
 a{
@@ -37,6 +38,15 @@ h1{
     font-weight:bold;
 }
 
+.productName{
+    font-family :Helvetica, Arial;
+    text-decoration:underline;
+}
+
+.price{
+    font-family :Helvetica, Arial;
+}
+
 .productDetailPicture{
     margin-right:auto;
     margin-left:auto;
@@ -58,11 +68,3 @@ h1{
     margin-left:10px;
 }
 
-.productName{
-    font-family :Helvetica, Arial;
-    text-decoration:underline;
-}
-
-.price{
-    font-family :Helvetica, Arial;
-}
