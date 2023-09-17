@@ -2,6 +2,10 @@ body{
     width:1200px
 }
 
+hr{
+    height:1px;
+}
+
 a{
     text-decoration:none;
 }
@@ -54,3 +58,11 @@ h1{
     margin-left:10px;
 }
 
+.productName{
+    font-family :Helvetica, Arial;
+    text-decoration:underline;
+}
+
+.price{
+    font-family :Helvetica, Arial;
+}
