@@ -1,18 +1,75 @@
-body{
+html{
     width:1200px
 }
 
-hr{
-    height:1px;
-    color:black;
+
+
+
+.tab{
+    display: flex;
+    justify-content:space-between;
+    margin-top:20px;
+    margin-left:20px;
+}
+
+.tabRight{
+    width:750px;
+    height:250px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    margin-bottom:70px;
+}
+
+.linktoPage{
+    display: flex;
+    justify-content:flex-end;
 }
 
 a{
     text-decoration:none;
+    padding-right:70px;
+}
+
+.link{
+    font-size:x-large;
+    margin-bottom:10px;
+    color:black;
+}
+
+.link:hover{
+    text-align:center;
+    background-color:yellow;
+    font-weight:bold;
+}
+
+hr{
+    width:100%; 
+    height:4px; 
+    background:black;
 }
 
 h1{
-    text-align:center;
+    text-align:left;
+    font-family : sans-serif;
+    font-weight:normal;
+    font-size:xx-large;
+}
+
+
+
+
+
+
+.productSection{
+    display: flex;
+    flex-direction:column;
+}
+
+.sections{
+    display: flex;
+    margin:20px;
+    justify-content: space-around;
 }
 
 .image{
@@ -20,43 +77,56 @@ h1{
     text-align:center;
 }
 
-.link{
-    text-align:center;
+.productName{
+    text-decoration:underline;
+    text-decoration-thickness:0.1px;
+    text-decoration-color:grey;
+    text-underline-offset: 0.5px;
+    color:black;
+    margin:5px;
 }
 
 .productCardDiv{
-    margin-right:auto;
-    margin-left:auto;
-    text-decoration:none;
-    width: 410px;
+    font-family : sans-serif;
+    font-size:x-large;
+    padding:10px;
+    width: 292.5px;
     display:flex;
 }
 
 .productCardDiv:hover{
-    margin-right:auto;
     background-color:yellow;
     font-weight:bold;
 }
 
-.productName{
-    font-family :Helvetica, Arial;
-    text-decoration:underline;
+.price{
+    font-weight:normal;
+    text-decoration:none;
+    color:black;
+    margin:5px;
 }
 
-.price{
-    font-family :Helvetica, Arial;
+
+
+
+
+
+.productDetailSection{
+    display: flex;
+    justify-content:flex-end;
+    padding-left:80px;
+    padding-right:80px;
 }
 
 .productDetailPicture{
-    margin-right:auto;
     margin-left:auto;
-    text-align:center;
+    margin-right:auto;
 }
 
 .productDetailLetter{
-    margin-right:auto;
-    margin-left:auto;
     width:25%;
+    font-family : sans-serif;
+    font-size:x-large;
 }
 
 .cartProduct{
