@@ -16,11 +16,11 @@
 			<div class = "tabRight">
 				<div class = "linktoPage">
 					<a href="../solution-hw2/Product Gallery.html">
-						<p class="link">PRODUCTS</p>
+						<p id="productinGallery">PRODUCTS</p>
 					</a>
 
 					<a href="../solution-hw2/Shopping Cart.html">
-						<p class="link">CART</p>
+						<p id="cartinGallery">CART</p>
 					</a>
 				</div>
 
@@ -39,21 +39,35 @@
       </div>
 
       <div class="productDetailLetter">
-        <p>Customize our delicious, hand-made cinammon roll to your liking</p>
+        <p>Customize our delicious, hand-made cinammon roll to your liking!</p>
 
-        <p>Glazing:</p>
-        <select>
-          <option value="Keep original">Keep original</option>
-        </select>
+        <br>
 
-        <p>Pack size:</p>
-        <select>
-          <option value="1">1</option>
-        </select>
-
-        <p>$2.49
-          <button class="button" type="button">Add to Cart</button>
-        </p>
+        <form action="../solution-hw2/Shopping Cart.html">
+          <p>Glazing:</p>
+          <select class = "button">
+            <option value="Keep original">Keep original</option>
+            <option value="Sugar milk">Sugar milk</option>
+            <option value="Vanilla milk">Vanilla milk</option>
+            <option value="Double chocolate">Double chocolate</option>
+          </select>
+          
+          <p>Pack size:</p>
+          <select class = "button">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="6">6</option>
+            <option value="12">12</option>
+          </select>
+          
+          <br>
+          <br>
+          <br>
+          
+          <p>$2.49
+            <input class="submit" type="submit" value="Add to Cart">
+          </p>
+        </form>
       </div>
     </div>
 
