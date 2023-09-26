@@ -5,7 +5,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Product Detail page</title>
-    <script defer src="random-element.js" type="text/javascript"></script>
+    <script defer src="random-element.js"></script>
   </head>
   
 	<body>
@@ -44,26 +44,21 @@
 
         <form action="../solution-hw2/Shopping Cart.html">
           <p>Glazing:</p>
-          <select class = "button">
-            <option value="Keep original">Keep original</option>
-            <option value="Sugar milk">Sugar milk</option>
-            <option value="Vanilla milk">Vanilla milk</option>
-            <option value="Double chocolate">Double chocolate</option>
+          <select class = "button" id="glazingOptions" onchange="glazingChange(this)">
+
           </select>
           
           <p>Pack size:</p>
-          <select class = "button">
-            <option value="1">1</option>
-            <option value="3">3</option>
-            <option value="6">6</option>
-            <option value="12">12</option>
+          <select class = "button" id="packSizeOptions"onchange="packChange(this)">
+
           </select>
           
         <br> 
         <br> 
         <br> 
         
-          <p class="AddtoCart">$2.49
+          <p class="AddtoCart">
+            <span id="totalPrice">$2.49</span>
             <input class="submit" type="submit" value="Add to Cart">
           </p>
         </form>
