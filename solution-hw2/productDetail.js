@@ -1,3 +1,7 @@
+<script src="rollsData.js"></script>
+
+
+
 let allGlaze=[
     {
         name:"Keep original", 
@@ -19,19 +23,19 @@ let allGlaze=[
 
 let allPack=[
     {
-        packsize:1,
+        packsize: 1,
         packprice: 1,
     },
     {
-        packsize:3,
+        packsize: 3,
         packprice: 3,
     },
     {
-        packsize:6,
+        packsize: 6,
         packprice: 5,
     },
     {
-        packsize:12,
+        packsize: 12,
         packprice: 10,
     },
 ];
@@ -55,6 +59,7 @@ for ( let i = 0; i <allGlaze.length; i++){
 }
 
 
+
 let totalPrice = document.querySelector('#totalPrice');
 let glazingPrice = 0;
 let packsizePrice = 1;
@@ -76,4 +81,3 @@ function packChange(element){
     packsizePrice = element.value;
     generatePrice(glazingPrice,packsizePrice);
 }
-
