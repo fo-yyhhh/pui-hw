@@ -1,5 +1,19 @@
-<script src="rollsData.js"></script>
+let cart = [];
 
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const rollType = params.get('roll');
+
+const rollName = document.querySelector('#rollName');
+rollName.innerText = rollType + ' Cinnamon Roll'
+
+const rollPicture = document.querySelector('#rollPicture');
+rollPicture.src = '../assets/products/'+rolls[rollType].imageFile;
+
+
+let totalPrice = document.querySelector('#totalPrice');
+let basePrice = rolls[rollType].basePrice;
+totalPrice.textContent = "$ "+basePrice;
 
 
 let allGlaze=[
@@ -59,11 +73,8 @@ for ( let i = 0; i <allGlaze.length; i++){
 }
 
 
-
-let totalPrice = document.querySelector('#totalPrice');
 let glazingPrice = 0;
 let packsizePrice = 1;
-const basePrice = 2.49;
 let priceOutput = basePrice;
 
 function generatePrice(glazingPrice,packsizePrice){
@@ -80,4 +91,22 @@ function glazingChange(element){
 function packChange(element){
     packsizePrice = element.value;
     generatePrice(glazingPrice,packsizePrice);
+}
+
+
+
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing = rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
+
+function addtoCart(){
+    let roll = new Roll(rollType,selectGlazing.option,selectPack.option,basePrice);
+    cart.push(roll);
+    console.log(cart);
 }

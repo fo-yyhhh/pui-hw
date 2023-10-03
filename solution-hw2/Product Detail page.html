@@ -5,7 +5,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Product Detail page</title>
-    <script defer src="productDetail.js"></script>
+    <script defer src="rollsData.js"></script>
     <script defer src="element detail.js"></script>
   </head>
   
@@ -28,14 +28,13 @@
 
 				<hr>
 
-				<h1>Original cinnamon roll</h1>
+				<h1 id="rollName">Original cinnamon roll</h1>
       </div>
     </div>
 
     <div class ="productDetailSection">
       <div class="productDetailPicture">
-        <img src="../assets/products/original-cinnamon-roll.jpg" class="image"
-        alt="original" width="600px">
+        <img src="" class="image" id="rollPicture" width="600px">
       </div>
 
       <div class="productDetailLetter">
@@ -49,16 +48,16 @@
           </select>
           
           <p>Pack size:</p>
-          <select class = "button" id="packSizeOptions"onchange="packChange(this)">
+          <select class = "button" id="packSizeOptions" onchange="packChange(this)">
           </select>
           
         <br> 
         <br> 
         <br> 
         
-          <p class="AddtoCart">
-            <span id="totalPrice">$2.49</span>
-            <input class="submit" type="submit" value="Add to Cart">
+          <p class="AddtoCart" onclick="generatePrice(0,1)">
+            <span id="totalPrice"></span>
+            <input class="submit" type="button" value="Add to Cart" onclick="(addtoCart())">
           </p>
         </form>
       </div>
