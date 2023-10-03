@@ -105,8 +105,11 @@ class Roll {
 }
 
 
+
 function addtoCart(){
-    let roll = new Roll(rollType,selectGlazing.option,selectPack.option,basePrice);
+    let rollGlazing = document.querySelector('#glazingOptions');
+    let packSize = document.querySelector('#packSizeOptions');
+    let roll = new Roll(rollType,rollGlazing.options[rollGlazing.selectedIndex].text,packSize.options[packSize.selectedIndex].text,basePrice);
     cart.push(roll);
     console.log(cart);
 }
