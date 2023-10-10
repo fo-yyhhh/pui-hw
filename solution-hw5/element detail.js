@@ -94,9 +94,7 @@ function packChange(element){
 }
 
 
-
-/*shopping cart page*/
-
+/*product detail to shopping cart*/
 let cart = [];
 
 class Roll {
@@ -116,7 +114,13 @@ function addtoCart(){
     console.log(cart);
 }
 
+
+
+/*shopping cart page*/
+
 let cartObject1= new Roll("Original", "Sugar milk", 1, 2.49);
 let cartObject2= new Roll("Walnut", "Vanilla milk", 12, 3.49);
 let cartObject3= new Roll("Raisin", "Sugar milk", 3, 2.99);
 let cartObject4= new Roll("Apple", "Keep Original", 3, 3.49);
+cart.push(cartObject1,cartObject2,cartObject3,cartObject4);
+
