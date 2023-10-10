@@ -1,4 +1,4 @@
-let cart = [];
+/* product detail page*/
 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
@@ -95,6 +95,10 @@ function packChange(element){
 
 
 
+/*shopping cart page*/
+
+let cart = [];
+
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
         this.type = rollType;
@@ -104,8 +108,6 @@ class Roll {
     }
 }
 
-
-
 function addtoCart(){
     let rollGlazing = document.querySelector('#glazingOptions');
     let packSize = document.querySelector('#packSizeOptions');
@@ -113,3 +115,8 @@ function addtoCart(){
     cart.push(roll);
     console.log(cart);
 }
+
+let cartObject1= new Roll("Original", "Sugar milk", 1, 2.49);
+let cartObject2= new Roll("Walnut", "Vanilla milk", 12, 3.49);
+let cartObject3= new Roll("Raisin", "Sugar milk", 3, 2.99);
+let cartObject4= new Roll("Apple", "Keep Original", 3, 3.49);
