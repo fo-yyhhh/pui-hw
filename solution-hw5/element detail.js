@@ -85,7 +85,6 @@ function generatePrice(glazingPrice,packsizePrice){
 }
 
 function glazingChange(element){
-    console.log(element);
     glazingPrice = element.value;
     generatePrice(glazingPrice,packsizePrice);
 }
