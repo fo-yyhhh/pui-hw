@@ -16,6 +16,7 @@ html{
     width:750px;
     justify-content: space-around;
     margin-left:30px;
+    flex-direction: column;
 }
 
 .linktoPage{
@@ -181,16 +182,30 @@ select{
 
 .cartProduct{
     display:flex;
+    width: 100%;
     all:none;
+    flex-direction: column;
     font-size:x-large;
     justify-content: space-between;
-    align-items:center;
+    align-items:left;
     margin-top:20px;
 }
 
 
 .cartProduct p{
     margin:2px;
+}
+
+.cartItem{
+    display:flex;
+    flex-direction: column;
+    align-items:left;
+}
+
+.objectGroupDisplay{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .total{
@@ -201,12 +216,14 @@ select{
 }
 
 .remove{
-    font-size:small;
+    font-size:x-large;
     font-weight:bold;
     text-decoration:underline;
-    text-decoration-thickness:0.1px;
-    text-decoration-color:grey;
-    text-underline-offset: 0.5px;
+    text-align: left;
+    text-decoration-thickness:2px;
+    text-underline-offset: 1px;
+    padding:20px 0px;
+    width:120px;
 }
 
 .cartDescribe{

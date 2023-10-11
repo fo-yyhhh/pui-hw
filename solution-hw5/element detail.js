@@ -81,9 +81,11 @@ function generatePrice(glazingPrice,packsizePrice){
     priceOutput = (basePrice + parseFloat(glazingPrice))*parseInt(packsizePrice);
     priceOutput = priceOutput.toFixed(2);
     totalPrice.textContent = "$ "+priceOutput;
+    return priceOutput;
 }
 
 function glazingChange(element){
+    console.log(element);
     glazingPrice = element.value;
     generatePrice(glazingPrice,packsizePrice);
 }
@@ -94,33 +96,22 @@ function packChange(element){
 }
 
 
-/*product detail to shopping cart*/
+
+
 let cart = [];
 
 class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
+    constructor(rollType, rollGlazing, packSize, rollPrice) {
         this.type = rollType;
         this.glazing = rollGlazing;
         this.size = packSize;
-        this.basePrice = basePrice;
+        this.rollPrice = rollPrice;
     }
 }
-
 function addtoCart(){
     let rollGlazing = document.querySelector('#glazingOptions');
     let packSize = document.querySelector('#packSizeOptions');
-    let roll = new Roll(rollType,rollGlazing.options[rollGlazing.selectedIndex].text,packSize.options[packSize.selectedIndex].text,basePrice);
+    let roll = new Roll(rollType,rollGlazing.options[rollGlazing.selectedIndex].text,packSize.options[packSize.selectedIndex].text,priceOutput);
     cart.push(roll);
     console.log(cart);
 }
-
-
-
-/*shopping cart page*/
-
-let cartObject1= new Roll("Original", "Sugar milk", 1, 2.49);
-let cartObject2= new Roll("Walnut", "Vanilla milk", 12, 3.49);
-let cartObject3= new Roll("Raisin", "Sugar milk", 3, 2.99);
-let cartObject4= new Roll("Apple", "Keep Original", 3, 3.49);
-cart.push(cartObject1,cartObject2,cartObject3,cartObject4);
-

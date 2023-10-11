@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Shopping Cart</title>
     <script defer src="rollsData.js"></script>
-    <script defer src="element detail.js"></script>
+    <script defer src="cart.js"></script>
   </head>
   
   <body>
@@ -29,38 +29,19 @@
 
 				<h1>Shopping cart</h1>
         
-        <div class="cartProduct">
-          <img src="../assets/products/original-cinnamon-roll.jpg" class="image"
-          alt="original" width="200px">
+        <template class="cartProduct" id="cartObject-template">
+          <div class="cartItem">
           
-          <div class="cartDescribe">
-            <p>Original Cinnamon Roll</p>
-            <p>Glazing:Keep original</p>
-            <p>Pack Size:1</p>
           </div>
-          <p>$2.49</p>
-        </div>
-        <p class="remove">Remove</p>
 
-    
-        <div class="cartProduct">
-          <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" 
-          class="image" alt="raisin" width="200px">
-          
-          <div class="cartDescribe">
-            <p>Double Chocolate Cinnamon Roll</p>
-            <p>Glazing:Keep original</p>
-            <p>Pack Size:6</p>
-          </div>
-          <p>$27.45</p>
-        </div>
-        <p class="remove">Remove</p>
+        </template>
+
 
         <hr class="cartProduct">
         
         <div class="total">
           <p>Total</p>
-          <p>$29.94</p>
+          <p id="priceTotal">$29.94</p>
         </div>
         
         <br>
