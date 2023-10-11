@@ -104,22 +104,29 @@ cart.add(cartObject1).add(cartObject2).add(cartObject3).add(cartObject4);
 
 
 
-function removeItem(eachObject){
-    console.log(eachObject);
-        cart.delete(eachObject);
-        console.log(cart);
-        calculateTotalPrice(cart);
+function removeItem(id){
+    let index = 0
+    for (template of cart){
+        if (index === id) {
+            cart.delete(template);
+            displayTemplate(cart);
+            calculateTotalPrice(cart);
+            break;
+        }
+        index++;
     }
-
-
-let cartContainer = document.querySelector("#cartObject-template");
+}
 
 
 
+function displayTemplate(cart){
+    let cartContainer = document.querySelector("#cartObject-template");
+    cartContainer.innerText = '';
+    let index=-1;
     for (eachObject of cart) {
         let cartObject = document.createElement("div");
         cartObject.classList.add("cartItem");
-
+        index +=1;
         cartObject.innerHTML = `
         <link rel="stylesheet" type="text/css" href="style.css">
             <div class = objectGroupDisplay> 
@@ -131,12 +138,12 @@ let cartContainer = document.querySelector("#cartObject-template");
                 </div>
                 <p>$${eachObject.rollPrice}</p>
             </div>
-                <p class="remove" onclick="removeItem(eachObject)">Remove</p>
+                <p class="remove" id=${index} onclick="removeItem(${index})">Remove</p>
         `;
 
     cartContainer.appendChild(cartObject);
     }
-
+}
 
 let priceTotal=document.querySelector("#priceTotal");
 let totalPrice=0
@@ -145,9 +152,9 @@ function calculateTotalPrice(cart){
     totalPrice=0;
     for (eachObject of cart) {
         totalPrice+=eachObject.rollPrice;
-        console.log(totalPrice);
     }
     priceTotal.textContent = '$' +totalPrice;
 }
 
+displayTemplate(cart)
 calculateTotalPrice(cart);
