@@ -121,7 +121,7 @@ function displayTemplate(cart){
         cartObject.innerHTML = `
         <link rel="stylesheet" type="text/css" href="style.css">
             <div class = objectGroupDisplay> 
-                <img src="../assets/products/${eachObject.type}-cinnamon-roll.jpg" class="image" alt="raisin" width="200px">
+                <img src="../assets/products/${rolls[eachObject.type].imageFile}" class="image" alt="raisin" width="200px">
                 <div class="cartDescribe">
                     <p>${eachObject.type} Cinnamon Roll</p>
                     <p>Glazing:${eachObject.glazing}</p>

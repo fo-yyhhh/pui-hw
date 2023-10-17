@@ -110,7 +110,7 @@ class Roll {
 function addtoCart(){
     let rollGlazing = document.querySelector('#glazingOptions');
     let packSize = document.querySelector('#packSizeOptions');
-    let roll = new Roll(rollType.style.textTransform = "lowercase",rollGlazing.options[rollGlazing.selectedIndex].text,packSize.options[packSize.selectedIndex].text,priceOutput);
+    let roll = new Roll(rollType,rollGlazing.options[rollGlazing.selectedIndex].text,packSize.options[packSize.selectedIndex].text,priceOutput);
     cart.add(roll);
     saveToLocalStorage();
 }
