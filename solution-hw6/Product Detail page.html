@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Product Detail page</title>
+    <script defer src="rollsData.js"></script>
+    <script defer src="element detail.js"></script>
+  </head>
+  
+	<body>
+		<div class = "tab">
+			<a href="../solution-hw6/Product Gallery.html">
+				<img src="../assets/logo/logo-01.svg" alt="logo" width="400px"> 
+			</a>
+
+			<div class = "tabRight">
+				<div class = "linktoPage">
+					<a href="../solution-hw6/Product Gallery.html">
+						<p id="productinGallery">PRODUCTS</p>
+					</a>
+
+					<a href="../solution-hw6/Shopping Cart.html">
+						<p id="cartinGallery">CART</p>
+					</a>
+				</div>
+
+				<hr>
+
+				<h1 id="rollName">Original cinnamon roll</h1>
+      </div>
+    </div>
+
+    <div class ="productDetailSection">
+      <div class="productDetailPicture">
+        <img src="" class="image" id="rollPicture" width="600px">
+      </div>
+
+      <div class="productDetailLetter">
+        <p>Customize our delicious, hand-made cinammon roll to your liking!</p>
+
+        <br>
+
+        <form action="../solution-hw6/Shopping Cart.html">
+          <p>Glazing:</p>
+          <select class = "button" id="glazingOptions" onchange="glazingChange(this)">
+          </select>
+          
+          <p>Pack size:</p>
+          <select class = "button" id="packSizeOptions" onchange="packChange(this)">
+          </select>
+          
+        <br> 
+        <br> 
+        <br> 
+        
+          <p class="AddtoCart" onclick="generatePrice(0,1)">
+            <span id="totalPrice"></span>
+            <input class="submit" type="button" value="Add to Cart" onclick="(addtoCart())">
+          </p>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

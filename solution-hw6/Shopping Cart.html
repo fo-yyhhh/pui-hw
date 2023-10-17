@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Shopping Cart</title>
+    <script defer src="rollsData.js"></script>
+    <script defer src="cart.js"></script>
+  </head>
+  
+  <body>
+		<div class = "tab">
+			<a href="../solution-hw6/Product Gallery.html">
+				<img src="../assets/logo/logo-01.svg" alt="logo" width="400px"> 
+			</a>
+
+			<div class = "tabRight">
+				<div class = "linktoPage">
+					<a href="../solution-hw6/Product Gallery.html">
+						<p id="productinCart">PRODUCTS</p>
+					</a>
+
+					<a href="../solution-hw6/Shopping Cart.html">
+						<p id="cartinCart">CART</p>
+					</a>
+				</div>
+				<hr>
+
+				<h1>Shopping cart</h1>
+        
+        <template class="cartProduct" id="cartObject-template">
+          <div class="cartItem">
+          
+          </div>
+
+        </template>
+
+
+        <hr class="cartProduct">
+        
+        <div class="total">
+          <p>Total</p>
+          <p id="priceTotal">$29.94</p>
+        </div>
+        
+        <br>
+
+        <div id="checkout">
+          <button class="submit" type="button">Checkout</button>
+        </div>
+        
+      </div>
+    </div>
+    
+  </body>
+  </html>
